@@ -13,8 +13,7 @@ This repository contains a web crawler built in Python. The crawler is designed 
 
 ### Prerequisites
 
-- Python 3.x
-- pip package manager
+- Java and Spring Boot
 
 ### Installation
 
@@ -22,3 +21,20 @@ This repository contains a web crawler built in Python. The crawler is designed 
 
    ```bash
    git clone https://github.com/your-username/web-crawler.git
+   
+## Microservices
+
+### Crawler (Includes a Crawler and a Scrapper)
+
+## ScoutDB
+
+- scout_id (number) : unique primary key (not null)
+- url (string) : internal urls (not null)
+- status_code (number): state (not null with constraints) (501 - Pending, 502 - Completed) 
+
+## Phase 1
+
+- Effectively download all the internal urls and store in ScoutDB. Set status code to 501. 
+- Maintain the crawler (re-crawl latest data)
+- A flag to track whether its is crawled for the first time. (in application configurations)
+
