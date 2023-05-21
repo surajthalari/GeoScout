@@ -35,6 +35,17 @@ This repository contains a web crawler built in Python. The crawler is designed 
 ## Phase 1
 
 - Effectively download all the internal urls and store in ScoutDB. Set status code to 501. 
-- Maintain the crawler (re-crawl latest data)
+- Maintain the crawler (re-crawl latest data) and store the data in relational database.
 - A flag to track whether its is crawled for the first time. (in application configurations)
+
+## Phase 2
+
+- Use the crawled data from phase 1 and scrape the geo locations.
+- Store the location data in MongoDB.
+
+## Phase 3
+
+- Implement a query engine to query data from mongoDB.
+- Cache to store frequently used queries.
+- Design and develop User Interface.
 
