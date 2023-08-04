@@ -1,6 +1,6 @@
 # GeoScout
 
-This repository contains a web crawler built in Python. The crawler is designed to extract data from websites by recursively traversing links and scraping relevant information.
+This repository contains a web crawler. The crawler is designed to extract data from websites by recursively traversing links and scraping relevant information.
 
 ## Features
 
